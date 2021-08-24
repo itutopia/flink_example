@@ -39,7 +39,7 @@ public class SocketWindowWordCount {
 
         // 将结果打印到控制台，注意这里使用的是单线程打印，而非多线程
         windowCounts.print().setParallelism(1);
-
+        // 提交任务
         env.execute("Socket Window WordCount");
     }
 }
